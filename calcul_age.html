@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculer lage de la personne.</title>
+    <script src="dom_calcul_age.js" defer></script>
+    <link href="calcul_age.css" rel="stylesheet">
+</head>
+<body>
+    <form id="userForm">
+
+        <h2>calculer l'age de la personne.</h2>
+        <label for="nom">Nom :</label>
+        <input type="text"  id="nom" name="nom"><br><br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom"><br><br>
+
+
+        <p>Situation :/</p>
+        <input type="radio" id="etudiant" name="Situation"value="étudiant">
+        <label for="etudiant">étudiant</label><br>
+
+
+        <input type="radio" id="salarie" name="Situation" value="salarie">
+        <label for="salarie">salarie</label><br><br>
+
+
+        <div>
+            <br></br>
+
+            <input type="number" id="anneNaissance" oninput="calculAge()">
+        </div>
+            <br></br>
+
+            <input type="button" value="valide" id="boutonValide">
+            
+    
+    </form>
+    
+</body>
+</html>

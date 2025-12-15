@@ -1,0 +1,11 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: darkgreen;
+    margin: 0;
+};
+
+.container {
+    width: 350px;
+    margin: auto;
+    background: chartreuse;
+}
