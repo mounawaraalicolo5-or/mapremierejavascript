@@ -57,3 +57,62 @@ for(i =0; i < 8; i=i+1){
   console.log(elementClassCommunes[i].textContent);
 
 }
+
+//j'insere des balise dans le fichier HTML grace au code javscript
+
+//je crée un element  (balise) nommé <section>
+let elementSection = document.createElement("section");
+
+
+//je recupere la balide <body> , puis je stoke <body> dans la variable elementBody
+let elementBody = document.querySelector('body');
+
+//j'ajoute la section du body
+elementBody.appendChild(elementSection);
+
+//j'ai crée un titre 3
+let nouveauTitre = document.createElement("h3");
+
+//je met le texte du titre
+nouveauTitre.textContent="Mon titre de la section";
+
+////j'ajoute le titre dans ma section
+elementSection.appendChild(nouveauTitre);
+
+
+//j'ai crée une nouvelle balise (section)appeler maman
+let elementMaman = document.createElement('Maman');
+
+//j'ajoute cette balise maman dans le body
+elementBody.appendChild(elementMaman);
+
+//je crée un deuxieme titre h3
+let nouveauTitre3 = document.createElement("h3");
+
+//je met le texte du titre
+nouveauTitre3.textContent="Bonjour maman";
+
+//j'ajoute le titre dans la balise maman
+elementMaman.appendChild(nouveauTitre3);
+
+
+//crée la balise img
+let elementimage = document.createElement("img");
+
+// je definie le chemin de mon image (image.jpg)
+elementimage.src = "images.jpg";
+
+//j'ajoute un texte alternatif a mon image
+elementimage.setAttribute("alt","la femme mahoraise");
+
+elementimage.className="images.jpg";
+
+elementimage.classList.add("images", "images");
+
+elementimage.classList.remove("images")
+
+// j'ajoute l'image dans le body de la page
+elementBody.appendChild(elementimage);
+
+
+
