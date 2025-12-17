@@ -6,14 +6,26 @@
     <title>Calculer l'âge de la personne</title>
     <script src="dom_calcul_age.js" defer></script>
     <link rel="stylesheet" href="calcul_age.css">
+    <script src="evenement.js" defer></script>
 </head>
 <body>
 
 <article>
+    <!--j'affiche la date du jour et l'heure-->
 
+    <div id="date" class="date">
+        <button id="validerdate" class="class">Date du jour</button>
+        <span id="dateDujour"></span>
+
+        <p>
+            Date au local : <span id="DateDuFormat2"></span>
+        </p>
+
+    </div>
+
+    <!--liste des communes de Mayotte-->
     <h3 id="communes">Communes de Mayotte</h3>
-
-
+    
     <ol id="listCommunes">
         <li class="commune">Bouéni</li>
         <li class="commune">Chiconi</li>
