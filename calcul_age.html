@@ -65,14 +65,23 @@
             <label for="prenom">Prénom :</label>
             <input type="text" id="prenom" name="prenom"><br><br>
 
-            <p>Situation :</p>
-            <input type="radio" id="etudiant" name="situation" value="Étudiant">
-            <label for="etudiant">Étudiant</label><br>
 
-            <input type="radio" id="salarie" name="situation" value="Salarié">
+        <label for="situation"> situation :</label>
+            <select name="situation" id="situation">
+                <option value="etudiant">etudiant</option>
+                <option value="salarie">salarie</option>
+            </select>
+
+            <label for="AnneeDeNaissance">Année de naissance :</label>
+            <input type="text" id="AnneeDeNaissance" name="AnneeDeNaissance"><br><br>
         </div>
         <div>
-            <input type="button" value="valider" id="boutonValide">
+            <input type="submit" value="valider" id="boutonValide">
         </div>
 
     </form>
+
+    <br>
+    <div id="resultat">
+
+    </div>
